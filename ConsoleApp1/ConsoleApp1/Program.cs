@@ -6,8 +6,15 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Hello");
+            char[] dato=new char[10];
+
+            for(int i=0; i <=9; i++)
+            { 
+            Console.WriteLine("i: "+i);
+            Console.Write("ingrese una letra: ");
+                dato[i] = char.Parse(Console.ReadLine());
+            }
+            Console.ReadKey();
         }
     }
 }
